@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Flexbox Pricing Table</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sono:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+   body {
+      font-family: 'Sono', sans-serif;
+    }
+
+.plan-price, .plan-title{
+  margin-top: 10px;
+ font-weight: bold;
+}
+.plan-price{
+  font-size: xx-large;
+}
+    .pricing-container{
+      display:flex;
+      justify-content: space-evenly;
+      height: 100vh;
+      align-items: center;
+    ;
+
+    }
+   .pricing-plan{
+    background-color: lightgray;
+    min-width: 300px;
+    height: 225px;
+    text-align: center;
+   
+   }
+ .pricing-plan > * {
+  align-items: center;
+ }
+   
+.plan-features li{
+  list-style: none;
+  margin-bottom: 8px;
+}
+   button{
+    background-color: darkorange;
+    align-items: center;
+  }
+    /* Hint: What can you do with a media query and flexbox? */
+    @media (max-width: 1250px) {
+      
+    }
+ .pricing-plan > {
+    margin-bottom: 20px;
+    }
+  </style>
+</head>
+
+<body >
+  <div class="pricing-container">
+    <div class="pricing-plan">
+      <div class="plan-title">Basic</div>
+      <div class="plan-price">$9.99/month</div>
+      <ul class="plan-features">
+        <li>✅ 5 one-on-one sessions</li>
+        <li>✅ 3 midterm preps</li>
+        <li>🚫 24/7 call support</li>
+      </ul>
+      <button class="plan-button">Sign Up</a>
+    </div>
+    <div class="pricing-plan">
+      <div class="plan-title">Standard</div>
+      <div class="plan-price">$19.99/month</div>
+      <ul class="plan-features">
+        <li>✅ 50 One-on-ones</li>
+        <li>✅ 5 Midtermpreps</li>
+        <li>🚫 24/7 call support</li>
+      </ul>
+      <button class="plan-button">Sign Up</a>
+    </div>
+    <div class="pricing-plan">
+      <div class="plan-title">Premium</div>
+      <div class="plan-price">$49.99/month</div>
+      <ul class="plan-features">
+        <li>✅Unlimited One-on-Ones</li>
+        <li>✅ 15 Exam prep</li>
+        <li>✅ 24/7 call Support</li>
+      </ul>
+      <button class="plan-button">Sign Up</a>
+    </div>
+  </div>
+
+</body>
+
+</html>
